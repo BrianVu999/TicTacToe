@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe-NamVu</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- main content -->
+    <header>
+        <h1>
+            <span id="tic">Tic</span>
+            <span id="tac">Tac</span>
+            <span id="toe">Toe!</span>
+        </h1>
+    </header>
+    <div>
+        <h2>Score</h2>
+        <h3>X&emsp;&emsp;O</h3>
+        <p><span id="scoreX">0</span>&emsp;&emsp;&emsp;<span id="scoreO">0</span></p>
+    </div>
+    <br>
+
+    <!-- game board -->
+    <table>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <!-- play information and controls -->
+    <p><p id="currentPlayer">Player <span id="player">X</span> Go!</p>
+        <button id="reset">Reset Game</button>
+    </p>
+
+    <!-- hidden elements used for displaying results -->
+    <div id="message">
+        <p>GAME OVER!</p>
+        <h3 id="winner"></h3>
+        <p>&mdash;click anywhere in the box to dismiss this message&mdash;</p>
+    </div>
+    <div id="overlay"></div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
